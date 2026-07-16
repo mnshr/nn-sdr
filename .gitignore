@@ -1,0 +1,26 @@
+# Large dataset files
+data/**/*.csv
+data/**/*.gz
+data/**/*.zip
+data/**/PRSA_Data_*.csv
+
+# Ignore actual downloaded dataset directories
+data/appliances_energy/
+data/beijing_air_quality/
+data/ct_slices/
+data/fashion_mnist/
+data/jena_climate/
+data/mnist/
+data/seoul_weather/
+data/superconductivity/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# R
+.Rhistory
+.RData
+.Ruserdata

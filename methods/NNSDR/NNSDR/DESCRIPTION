@@ -1,0 +1,13 @@
+Package: NNSDR
+Type: Package
+Title: Fusing Neuronal Networks with Sufficient Dimension Reduction
+Version: 0.1
+Date: 2021-04-19
+Author: Daniel Kapla [aut]
+Maintainer: Daniel Kapla <daniel@kapla.at>
+Description: Compinint the Outer Product of Gradients (OPG) with Neuronal Networks
+    for estimation of the mean subspace.
+License: GPL-3
+Depends: methods, tensorflow (>= 2.2.0)
+Encoding: UTF-8
+RoxygenNote: 7.0.2
