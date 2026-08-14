@@ -2,14 +2,15 @@
 
 ## Overview
 
-| # | Paper | Year | Code Repo | Framework | Datasets | Authors / Contact |
-|---|-------|------|-----------|-----------|----------|-------------------|
-| 1 | **Fusing Sufficient Dimension Reduction with Neural Networks** | 2021 | ✅ [NNSDR](https://git.art-ist.cc/daniel/NNSDR) | R + TensorFlow | Boston Housing (`mlbench`), kc_house_data (`MAVE`), Beijing Air Quality ([UCI](https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data)) | Daniel Kapla et al. |
-| 2 | **Deep Nonlinear Sufficient Dimension Reduction** (Chen 2024) | 2024 | ❌ None | Not specified | MNIST, Fashion-MNIST, simulations | Zhou Yu (corresponding) — `zyu@stat.ecnu.edu.cn`, Yuling Jiao — `yulingjiaomath@whu.edu.cn` |
-| 3 | **Belted and Ensembled Neural Network for Linear and Nonlinear SDR** | 2024 | ❌ None | PyTorch | Superconductivity ([UCI, DOI](https://doi.org/10.24432/C53P47)), simulations | Authors acknowledge receiving code from Faming Liang & Zhou Yu |
-| 4 | **Supervised Dynamic Dimension Reduction with Deep Neural Network** | 2025 | ❌ None | Not specified | FinC (Kozak 2019), Jena Climate (Max Planck), Weather (Kaggle), Energy & Light ([UCI](https://doi.org/10.24432/C53P47)) | Not extracted |
-| 5 | **Neural Networks Perform SDR** (DRNN) | 2024 | ✅ [DRNN](https://github.com/oaksword/DRNN) | Python + PyTorch | Seoul Weather (UCI), simulations | Zhou Yu — `zyu@stat.ecnu.edu.cn` |
-| 6 | **Nonlinear SDR with a Stochastic Neural Network** (StoNet) | 2022 | ❌ None (but references many comparison repos) | Not specified | Simulations, sub-MNIST, CT slices (UCI) | Faming Liang — `fmliang@purdue.edu` |
+| #   | Paper                                                                     | Year | Code Repo                                                                                               | Framework        | Datasets                                                                                                                                                     | Authors / Contact                                                                                                      |
+| --- | ------------------------------------------------------------------------- | ---- | ------------------------------------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| 1   | **Fusing Sufficient Dimension Reduction with Neural Networks**            | 2021 | ✅ [NNSDR](https://git.art-ist.cc/daniel/NNSDR)                                                          | R + TensorFlow   | Boston Housing (`mlbench`), kc_house_data (`MAVE`), Beijing Air Quality ([UCI](https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data)) | Daniel Kapla et al.                                                                                                    |
+| 2   | **Deep Dimension Reduction for Supervised Representation Learning** (DDR) | 2024 | ✅ [Liao-Xu/DDR](https://github.com/Liao-Xu/DDR) ([IEEE](https://ieeexplore.ieee.org/document/10456552)) | Python + PyTorch | MNIST, Toy classification/regression                                                                                                                         | Jian Huang, Yuling Jiao (`yulingjiaomath@whu.edu.cn`), Xu Liao, Jin Liu, Zhou Yu (`zyu@stat.ecnu.edu.cn`)              |
+| 3   | **Belted and Ensembled Neural Network for SDR** (BENN)                    | 2024 | ⚠️ Partial (Missing required `GMDD`/`GODD` code)                                                        | PyTorch          | Superconductivity ([UCI, DOI](https://doi.org/10.24432/C53P47)), simulations                                                                                 | Authors acknowledge receiving code from Faming Liang & Zhou Yu                                                         |
+| 4   | **Supervised Dynamic Dimension Reduction with Deep NN**                   | 2025 | ❌ None                                                                                                  | Not specified    | FinC (Kozak 2019), Jena Climate (Max Planck), Weather (Kaggle), Energy & Light ([UCI](https://doi.org/10.24432/C53P47))                                      | Not extracted                                                                                                          |
+| 5   | **Neural Networks Perform SDR** (DRNN)                                    | 2024 | ✅ [DRNN](https://github.com/oaksword/DRNN)                                                              | Python + PyTorch | Seoul Weather (UCI), simulations                                                                                                                             | Zhou Yu — `zyu@stat.ecnu.edu.cn` (Includes SIR, SAVE, PCA, SPCA, Generalized Kernel, NN+LS in `demo`/`util`)           |
+| 6   | **Nonlinear SDR with a Stochastic Neural Network** (StoNet)               | 2022 | ❌ None (references baseline repos)                                                                      | Not specified    | Simulations, sub-MNIST, CT slices (UCI)                                                                                                                      | Faming Liang — `fmliang@purdue.edu`                                                                                    |
+| 7   | **Fréchet Cumulative Covariance Net for SDR with Random Objects**         | 2025 | ❌ None                                                                                                  | PyTorch          | Facial expression recognition, non-Euclidean random objects                                                                                                  | Hang Yuan, Christina Dan Wang, Zhou Yu (`zyu@stat.ecnu.edu.cn`) — [arXiv:2502.15374](https://arxiv.org/abs/2502.15374) |
 
 ---
 
@@ -19,8 +20,10 @@ The following repos have been cloned locally into the [sdr workspace](file:///Us
 
 | Repo | Local Path | Language |
 |------|-----------|----------|
-| NNSDR | [NNSDR/](file:///Users/manish/gh/research/sdr/NNSDR) | R (with TensorFlow via `reticulate`) |
-| DRNN | [DRNN/](file:///Users/manish/gh/research/sdr/DRNN) | Python (PyTorch) |
+| NNSDR | [nn-sdr/methods/NNSDR/](file:///Users/manish/gh/research/sdr/nn-sdr/methods/NNSDR) | R (with TensorFlow via `reticulate`) |
+| DRNN | [nn-sdr/methods/DRNN/](file:///Users/manish/gh/research/sdr/nn-sdr/methods/DRNN) | Python (PyTorch) |
+| DDR | [nn-sdr/methods/DDR/](file:///Users/manish/gh/research/sdr/nn-sdr/methods/DDR) | Python (PyTorch) |
+| nsdr | [nn-sdr/methods/nsdr/](file:///Users/manish/gh/research/sdr/nn-sdr/methods/nsdr) | R (CRAN: Nonlinear SDR — GSIR, GSAVE, KPCA) |
 
 ---
 
@@ -28,15 +31,16 @@ The following repos have been cloned locally into the [sdr workspace](file:///Us
 
 These are publicly available implementations of comparison/baseline SDR methods referenced across papers:
 
-| Method | URL |
-|--------|-----|
-| NNSDR | `https://git.art-ist.cc/daniel/NNSDR/src/branch/master` |
-| RCIT (R package) | `https://github.com/ericstrobl/RCIT` |
-| LSMIE | `http://www.ms.k.u-tokyo.ac.jp/software.html#LSDR` |
-| KDR | `https://www.ism.ac.jp/~fukumizu/software.html` |
-| SIR / SAVE (Python) | `https://joshloyal.github.io/sliced/` |
-| CVarE (R package) | CRAN — `CVarE` |
-| MAVE (R package) | CRAN — `MAVE` |
+| Method              | URL                                                                                                                                                                           |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| nsdr (R package)    | `https://github.com/cran/nsdr` (CRAN — `nsdr`; GSIR, GSAVE, KPCA by Bing Li & Kyongwon Kim)                                                                                 |
+| NNSDR               | `https://git.art-ist.cc/daniel/NNSDR/src/branch/master`                                                                                                                       |
+| RCIT (R package)    | `https://github.com/ericstrobl/RCIT`                                                                                                                                          |
+| LSMIE               | `http://www.ms.k.u-tokyo.ac.jp/software.html#LSDR`                                                                                                                            |
+| GKDR / KDR          | `https://www.ism.ac.jp/~fukumizu/software.html` ([arXiv:1109.0455](https://arxiv.org/abs/1109.0455); *Gradient-based Kernel Dimension Reduction*, Fukumizu & Leng 2014, JASA) |
+| SIR / SAVE (Python) | `https://joshloyal.github.io/sliced/`                                                                                                                                         |
+| CVarE (R package)   | CRAN — `CVarE`                                                                                                                                                                |
+| MAVE (R package)    | CRAN — `MAVE`                                                                                                                                                                 |
 
 ---
 
