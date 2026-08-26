@@ -1,6 +1,6 @@
 # Local PDF Reference Archive
 
-This document tracks all 20 PDF reference papers stored locally in the workspace at [ref/](file:///Users/manish/gh/research/sdr/ref). This file is automatically synced to the Obsidian vault under `SDR-Research/pdf_reference_archive`.
+This document tracks all 21 PDF reference papers stored locally in the workspace at [ref/](file:///Users/manish/gh/research/sdr/ref). This file is automatically synced to the Obsidian vault under `SDR-Research/pdf_reference_archive`.
 
 ---
 
@@ -28,6 +28,8 @@ This document tracks all 20 PDF reference papers stored locally in the workspace
 | 18  | **SDR Based on an Ensemble of MAVE**                                          | 2011 | Faming Liang et al.                                | [ref/SDR based on an ensemble of MAVE 2011.pdf](file:///Users/manish/gh/research/sdr/ref/SDR%20based%20on%20an%20ensemble%20of%20MAVE%202011.pdf)                                                                             | Biometrika 2011                                                                                                                                                                 | [[SDR based on an ensemble of MAVE 2011]]                                                         |
 | 19  | **Online SDR through SIR**                                                    | 2020 | JMLR                                               | [ref/Online SDR through SIR 2020.pdf](file:///Users/manish/gh/research/sdr/ref/Online%20SDR%20through%20SIR%202020.pdf)                                                                                                       | JMLR 2020                                                                                                                                                                       | [[Online SDR through SIR 2020]]                                                                   |
 | 20  | **Information-Theoretic Viewpoint of SDR**                                    | 2022 | Debashis Ghosh                                     | [ref/SDR-Foundations-preprint.pdf](file:///Users/manish/gh/research/sdr/ref/SDR-Foundations-preprint.pdf)                                                                                                                     | Entropy 2022                                                                                                                                                                    | [[Sufficient Dimension Reduction An Information-Theoretic Viewpoint 2022]]                        |
+| 21  | **Generalized Multilinear Models for SDR on Tensor Predictors** (GMLM)        | 2025 | Daniel Kapla, Efstathia Bura                       | [ref/Generalized Multilinear Models for Sufficient Dimension Reduction on Tensor-Valued Predictors Kapla 2025.pdf](file:///Users/manish/gh/research/sdr/ref/Generalized%20Multilinear%20Models%20for%20Sufficient%20Dimension%20Reduction%20on%20Tensor-Valued%20Predictors%20Kapla%202025.pdf) | [Ann. Stat. (10.1214/25-AOS2598)](https://doi.org/10.1214/25-AOS2598)                                                                                                            | [[GMLM_SDR_tensor_predictors_summary]]                                                           |
+
 
 ---
 
